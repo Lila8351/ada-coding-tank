@@ -10,7 +10,14 @@
 
 const frase = "façaMercadoNoIfoodEntregamosTudoOQueVocêPrecisaNaPortaDaSuaCasa";
 const regex = /[A-Z]/g;
-const arrayLetrasMaiusculas = frase.match(regex); 
-const quantidadePalavras = arrayLetrasMaiusculas.length + 1;
-console.log(quantidadePalavras);
-console.log(arrayLetrasMaiusculas);
+
+// console.log(quantidadePalavras);
+// console.log(arrayLetrasMaiusculas);
+
+function quantasPalavras(){
+    const arrayLetrasMaiusculas = frase.match(regex); 
+    const quantidadePalavras = arrayLetrasMaiusculas.length + 1;
+    return quantidadePalavras;
+}
+
+console.log(quantasPalavras());
