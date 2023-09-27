@@ -22,3 +22,11 @@
 // 6- substitui os dois primeiros números por este resultado obtido com a soma
 
 // 7- retorna a informação EXCETO o "PM"
+
+let arrayHour = "06:15:25PM";
+let amOrPm = arrayHour.charAt(8);
+
+console.log(amOrPm);
+function changeHour (){
+
+}
