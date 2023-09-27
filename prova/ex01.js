@@ -23,10 +23,22 @@
 
 // 7- retorna a informação EXCETO o "PM"
 
-let arrayHour = "06:15:25PM";
-let amOrPm = arrayHour.charAt(8);
+const stringOfHours = "06:15:25PM";
+const arrayHours = Array.from(stringOfHours);
+let amOrPm = stringOfHours.charAt(8);
+// console.log(amOrPm);
+// console.log(arrayHours);
+// const minutes = arrayHours.slice(2, -2);
+// console.log(minutes);
 
-console.log(amOrPm);
 function changeHour (){
-
+    const hour = arrayHours.slice(0, -2);
+    const minutes = arrayHours.slice(2, -2);
+    console.log(minutes);
+    if(amOrPm === 'P'){
+        
+    } else {
+        return hour;
+    }
 }
+//console.log(changeHour());
