@@ -34,6 +34,8 @@ let amOrPm = stringOfHours.charAt(8);
 function changeHour (){
     const hour = arrayHours.slice(0, -2);
     const minutes = arrayHours.slice(2, -2);
+    const arrayHourToChange = arrayHours.slice(0, -8);
+    
     console.log(minutes);
     if(amOrPm === 'P'){
         
