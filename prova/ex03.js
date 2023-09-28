@@ -22,10 +22,5 @@
 
 const array = [12, 17, 15, 19, 22, 17, 19, 12];
 
-function aloneNumber(){
 
-    for (i=0; i<array.length; i++){
-        //aqui ele vai procurar o primeiro elemento ao longo da array toda
-    
-    }
-}
+
