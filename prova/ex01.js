@@ -26,26 +26,24 @@
 const stringOfHours = "06:15:25PM";
 
 const arrayHours = Array.from(stringOfHours);
+const regex = /[0-9]/g;
 
 // console.log(amOrPm);
 // console.log(arrayHours);
 // const minutes = arrayHours.slice(2, -2);
 // console.log(minutes);
 
-function changeHour (stringOfHours) {
+function changeHour () {
     const amOrPm = stringOfHours.charAt(8);
-    const regex = /[0-9]/g;
+    const hoursToChange = stringOfHours.match(regex);
+    const hour = arrayHours.slice(2, -2).join('');
 
-
-    // const hour = arrayHours.slice(0, -2);
-    // const minutes = arrayHours.slice(2, -2);
     // const arrayHourToChange = arrayHours.slice(0, -8);
-    
-    console.log(minutes);
     if(amOrPm === 'P'){
-        
+        const newHour = parseInt(hoursToChange[1]) + 12;
+        return newHour + hour;
     } else {
         return hour;
     }
 }
-//console.log(changeHour());
+console.log(changeHour());
