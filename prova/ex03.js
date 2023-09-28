@@ -17,3 +17,15 @@
 
 // 2.1.1- se o tamanho da array que volta do filter for igual a 1 (blablabla.length === 1), adiciona isso na array de
 //numeros solitarios 
+
+// ou eu desisto de tudo e tento fazer so com loop.
+
+const array = [12, 17, 15, 19, 22, 17, 19, 12];
+
+function aloneNumber(){
+
+    for (i=0; i<array.length; i++){
+        //aqui ele vai procurar o primeiro elemento ao longo da array toda
+    
+    }
+}
