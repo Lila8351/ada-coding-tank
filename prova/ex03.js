@@ -22,5 +22,28 @@
 
 const array = [12, 17, 15, 19, 22, 17, 19, 12];
 
-
+function aloneNumber(array) {
+    const contador = {};
+  
+    for (const number of array) {
+      if (contador[number]) {
+        contador[number]++;
+      } else {
+        contador[number] = 1;
+      }
+    }
+  
+    const numerosSolitarios = [];
+  
+    for (const numero in contador) {
+      if (contador[numero] === 1) {
+        numerosSolitarios.push(Number(numero));
+      }
+    }
+  
+    return numerosSolitarios;
+  }
+  
+  const alone = aloneNumber(array);
+  console.log(alone); 
 
